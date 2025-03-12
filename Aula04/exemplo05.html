@@ -7,22 +7,16 @@
 </head>
 <body>
     <script>
-        var num_dia = 2;
-        if(num_dia == 1){
-            console.log("Domingo");
-        }else if(num_dia == 2){
-            console.log ("Segunda");
-        }else if(num_dia == 3){
-            console.log ("Terça");
-        }else if(num_dia == 4){
-            console.log ("Quarta");
-        }else if(num_dia == 5){
-            console.log ("Quinta");
-        }else if(num_dia == 6){
-            console.log ("Sexta");
-        }else{
-            console.log("Sábado");
+      var num = parseInt(prompt("Digite um número: "));
+      let total_pares = 0;
+      for (let i = 1; i <= num ; i++) {
+        if (i % 2 ==0){
+            //console.log(i);
+            //total_pares = total_pares + i; 
+            total_pares += i;
         }
+      }
+     console.log("Total da soma :", total_pares)
     </script>
 </body>
 </html>
