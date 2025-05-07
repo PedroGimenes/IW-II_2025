@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercício 14</title>
+   <style>
+    img {
+    width: 180px;
+    height: 180px;
+    margin: 20px 0;
+    object-fit: contain;
+    transition: transform 0.3s;
+    }
+   </style>
+    <script>
+        function mouseEmCima(imagem){
+         imagem.src = "imgs/osnic.png";
+        }
+        function mouseFora(imagem){
+         imagem.src = "imgs/shaow.png";
+        }
+    </script>
+</head>
+<body>
+       Passe o mouse sobre a imagem: <br><br>
+       <img src="imgs/shaow.png" onclick="mouseEmCima(this)" onmouseover="mouseEmCima(this) "onmouseout="mouseFora (this)" width="300" height="300"><br><br>
+       
+
+     <!-- 1) Agora padronize os tamanhos das imagens<br><br>  -->
+     <!-- 2) Mude o evento para que as imagens sejam trocadas ao clicar com o mouse.  -->
+
+
+ <!--
+ width="300" height="300" : dentro da tag img src
+ onclick="mouseEmCima(this)"
+ onMouseOver="mouseEmCima(this)"
+ -->
+</body>
+</html>
